@@ -1,1 +1,16 @@
-My AI Engineering progress started today!
+chạy file .py với uv:
+    chạy file code: uv run python main.py
+    chạy unit test: uv run python -m unittest discover tests -v
+    cài thư viện phụ thuộc: uv add numpy torch
+                            # hoặc chạy kèm dependency ngay lập tức mà không cần cài vào venv:
+                            uv run --with numpy python main.py
+        
+chạy file .ts với pnpm:
+    chạy file code: pnpm dlx tsx main.ts
+    chạy test:  pnpm dlx tsx --test
+                # hoặc chỉ định file test:
+                pnpm dlx tsx --test tests/test_main.ts
+
+chạy file .jl:
+    chạy file code: julia main.jl
+    chạy test: julia tests/test_main.jl
